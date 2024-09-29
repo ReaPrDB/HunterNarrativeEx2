@@ -1,12 +1,241 @@
-﻿title: MyYarnScript
-position: 61,-505
+﻿title: Start
+tags:
+position: -334,-1197
 ---
-Wow!
-My first ever Yarn script in Unity!
+Narrator: The ground beneath you shifts slightly. There's a heaviness in the air that presses against your skin, and yet.. no wind stirs.
+Narrator: It feels as if you’ve been walking for ages. The path stretches endlessly in either direction, and your legs ache from the constant movement. A faint pulse hums through the air, subtle but persistent. You get the feeling that you shouldn't continue onward from here.
+-> Sit Down
+    <<jump SitDown>>
+-> Turn Back
+    <<jump turnback>>
+===
 
--> Gosh!
--> Incredible!
--> I'm amazed!
+title: SitDown
+position: -581,-820
+---
+Narrator: You sit, but the stillness is suffocating. The ground beneath you feels wrong, as though it shifts ever so slightly under your weight. The pulse you heard earlier seems to echo beneath the surface.
 
-Anyway, time to get writing!
+-> Listen Closely
+    <<jump ListenClose>>
+-> Stand Up
+    <<jump StandUp>>
+
+===
+
+title: ListenClose
+position: -813,-540
+---
+Narrator: The pulse grows louder, like a heartbeat buried deep below. It's slow, deliberate, and oddly familiar. It creeps up your spine, curling into your mind. Whatever it is, it’s waiting for you. You can’t stay here.
+
+-> Stand Up
+    <<jump StandUp>>
+-> Ignore It
+    <<jump Ignore>>
+
+===
+
+title: StandUp
+position: -524,-527
+---
+Narrator: You push yourself to your feet. The ground feels colder than ever before. As you rise, the pulse fades, but something remains-a quiet, lurking presence just beyond your senses. You feel compelled to move forward.
+-> Walk Forward
+    <<jump WalkForward>>
+===
+title: WalkForward
+position: -468,-153
+---
+Narrator: You take a few steps, and the ground feels firmer now, as if it’s guiding you. Shadows stretch along the ground, growing longer, like fingers reaching out toward you.
+Narrator: In the distance, two figures stand still, barely visible through the gloom.
+Narrator: You cautiously approach the figures. 
+Narrator: The figures don’t move, they remain perfectly still, as if they’ve been waiting for you all along. Their faces are blurred by shadow, their forms indistinct, but you can tell they're human, at least thats what you think.
+Figure 1: You shouldn't be here
+Narrator: A chill creeps into your bones. The second figure remains silent, its eyes-or what should be its eyes fixed right on you, unblinking.
+Figure 1: We are what remains. You will be too, in time.
+Narrator: As the words hang in the air, you feel a shift occur. The second figure darts forward with alarming speed. Its form twisting and turning unnaturally, lunging at you.
+-> Dodge To the left
+    <<jump leftdodge>>
+-> Stand still
+    <<jump standstill>>
+===
+title: Ignore
+position: -1057,-960
+---
+Narrator: You decide to dismiss the pulse, choosing to remain seated. The weight of your exhaustion drapes over you like a cloak, and your eyelids flutter as sleep begins to pull you under, dragging you into a dreamless void.
+Narrator: Moments later, you awake to the sound of something drawing near. But it’s too late-the glint of the creature's claws in the light of the moon becomes the final image seared into your mind before darkness takes you into it's embrace.
+???: <color=orange>You Disappoint me.</color>
+GAME OVER: would you like to play again?
+    -> yes
+        <<jump Start>>
+    -> no
+END
+===
+title: standstill
+position: -255,-21
+---
+Narrator: You freeze in place, paralyzed in fear as the second figure lunges at you.
+Narrator: You feel a cold grip around you, your vision fading to black
+???: <color=orange>So close, yet so far.</color>
+GAME OVER: would you like to play again?
+    -> yes
+        <<jump Start>>
+    -> no
+END
+===
+title: leftdodge
+position: -624,124
+---
+Narrator: Managing to overcome the sudden burst of fear within you, you dodge to the left, narrowly avoiding the second figures attack.
+Narrator: However, when you turn back towards the figures, they have vanished with no trace, as if they werent even there in the first place.
+-> Continue Onward
+    <<jump onward>>
+-> Turn Back
+    <<jump falseturnback>>
+===
+title: onward
+position: -585,435
+---
+Narrator: You decide to continue on forward, you feel as though this will all be over soon.
+Narrator: As you continue onward the tree's seem to clear up as through the thickening mist a small cabin lies ahead.
+<color=black>Narrator?:</color> <color=black>You've come too far to turn back now.</color>
+Narrator: The cabin stands alone, its weathered wood somehow holding it together, vines crawl up its sides as if reaching for something lost.
+Narrator: a chill runs down your spine as you approach. The door creaks slightly, inviting you inside. You can tell that something- or someone is waiting for you inside.
+-> Inspect The Surrondings
+    <<jump inspect>>
+-> Enter The cabin 
+    <<jump enter>>
+===
+title: falseturnback
+position: -193,236
+---
+???:<color=orange>No.</color>
+-> Continue Onward
+    <<jump onward>>
+-> Turn Back
+    <<jump falseturnback>>
+===
+title: inspect
+position: -745,646
+---
+Narrator: The voice of a man spoke out to you, you could tell he wasn't young.
+???: <color=orange>No.</color>
+???: <color=orange>No more fooling around.</color>
+???: <color=orange>Enter.</color>
+-> Inspect The Surrondings
+    <<jump inspect>>
+-> Enter The cabin
+    <<jump enter>>
+===
+title: enter
+position: -498,646
+---
+Narrator: Approaching the door you see the name "Alder" engraved into it.
+Narrator: Pushing the door open you finally step inside, feeling a rush of warmth far greater than the outside world.
+Narrator: Shadows flicker within the dimly lit cabin, and a figure looms within, partially hidden by layers of time and dust.
+Alder: <color=orange>A wayward soul has stumbled into my humble abode. I’ve been expecting you..</color>
+Narrator: Alders voice is like the rustle of dry leaves, heavy with secrets, yet unbothered by anything around him.
+Alder: <color=orange>At last you've made it. All that effort to bring you here.. and finally, here you stand.</color>
+Narrator: Save for the crackling fire and the groan of the old damp wood, the cabin is still. Alder watches you with his tired looking eyes, his beard an unkept mess of grey that appears to stretch on for years.
+Alder: <color=orange>This world you wandered through, this fog you stumbled in, none of it was by a chance. Every step forward, and every attempt to step back.. I made sure you couldn't stray far.</color>
+Alder: <color=orange>But not because I controlled you or anything, no.. you were always free to make your choices. I simply shaped the pathes around them.</color>
+-> Remain Silent
+    <<jump silence>>
+===
+
+
+title: silence
+position: -374,791
+---
+Alder: <color=orange>You have no words for me? Perhaps you’ve already realized there’s little left to say.</color>
+Narrator: The weight of Alders presence feels heavier now, though the room remains as it was. Alder stands up, moving closer as if to inspect you, his expression unreadable.
+Alder: <color=orange>You've reached the end, but one question remains.. will you accept it?</color> 
+-> I Accept
+    <<jump acceptance>>
+-> I Refuse
+    <<jump refusal>>
+-> Stay Silent
+    <<jump silentrepeat>>
+===
+title: acceptance
+position: -81,656
+---
+Narrator: You lower your head, exhaling all the tension that had been building since you first entered the fog. Alder watches, ndding slightly as you embrace the end.
+Alder: <color=orange>So, you understand.. this was inevitable. You are as much a part of my- this world as I am, and here.. we find closure.</color>
+Narrator: The room fades, its shadows receding until all thats left are the two of you, suspended in the void.
+Alder: <color=orange>good.. now rest</color>
+Narrator: The darkness swallows you whole.
+ENDING 1: <color=yellow>Peace At Last.</color>
+===
+title: refusal
+position: -82,924
+---
+Narrator: You clench your fists, resisting the pull towards finality. Alders face softens, he expected this.
+Alder: <color=orange>Still you struggle. Refusing to let go the illusion of control. But deep down you know that you path would always have led here.</color>
+Narrator: The cabin flickers, warping, but Alder remains fixed, his voice echoing in the vastness of the void.
+Alder: <color=orange> You were so close. But no matter, theres always another way.</color>
+Narrator: The shadows engulf you, a heavy silence replacing the world you've known.
+Narrator: All around you is darkness, no lights. This is it. You're on your own here. Trapped in the silent void.
+ENDING 2: <color=yellow>Suffering In Silence</color>
+===
+title: silentrepeat
+position: -81,793
+---
+Alder: <color=orange>No.</color>
+Alder: <color=orange>Silence is not an option here.</color>
+-> I Accept
+    <<jump acceptance>>
+-> I Refuse
+    <<jump refusal>>
+-> Stay Silent
+    <<jump silentrepeat>>
+===
+title: turnback
+position: 302,-1000
+---
+Narrator: You hesitate, an unseen force gnawing at the back of your mind. Instead of pushing forward, you decide to turn back.
+Narrator: As you retrace your steps, the forest around you seems to shift around. The once familiar trees, now feeling foreign, their branches reaching out like hands to block your way. The fog grows thicker, covering the path behind you.
+-> Push Through
+    <<jump pushthrough>>
+-> Look For Another Route
+    <<jump diffroute>>
+===
+title: pushthrough
+position: 623,-999
+---
+Narrator: Determined to leave, you press onward, forcing your way through the tightening maze of branches and fog.  The air growing thicker by the second. The forest seeming alive with unsettling awareness.
+Narrator: Just as you thought you might break free, a voice echoed out from the shadows.
+???: <color=orange>You cannot leave. You belong here.</color>
+Narrator: The trees close in, casuing you to stumble, but nothing happens. The path you once knew was gone, replaced by the endless whispering forest.
+-> Look For Another Route
+    <<jump diffroute2>>
+===
+title: diffroute
+position: 791,-682
+---
+Narrator: Instead of forcing your way through, you decide to veer off the path ahead, searching for another way out. The fog shifts as you move, but the forest seems to react, guidng your movements as if it was a maze
+Narrator: The air grows colder around you as the ground begins to feel softer, as if it was sinking beneath your feet.
+-> Continue
+<<jump continue>>
+===
+title: diffroute2
+position: 792,-854
+---
+Narrator: Instead of forcing your way through any longer, you decide to veer off the once uncovered the path ahead, searching for another way out. The fog shifts as you move, but the forest seems to react, guidng your movements as if it was a maze
+Narrator: The air grows colder around you as the ground begins to feel softer, as if it was sinking beneath your feet.
+-> Continue
+    <<jump continue>>
+===
+title: continue
+position: 1069,-770
+---
+Narrator: Suddenly, the fog parts, revealing a clearing up ahead. Relief washes over you, though something about the clearing feels.. wrong.
+Narrator: You step forward, but before you can fully enter, a familiar voice rings out in your ears, sounding quiet but firm.
+???: <color=orange>Why do you resist? This place.. is all there is for you.</color>
+Narrator: You feel a chill run down your spine as the voice lingers on. The clearing ahead seems like a trick, a mirage within the always shifting fog.
+Narrator: Before you can decide, the ground opens beneath you, pulling you into it with a sudden jolt. The forest fades, and all that remains is the feeling of falling, deeper, and deeper.
+Narrator: ..
+Narrator: ..
+Narrator: You wake up, or at least, you think you do. The world feels strange, unreal. The forest and the fog are gone, but the voice remains.
+???: <color=orange>You tried.. but it was never your choice.</color>
+Narrator: As you hear these words, the world dissolves around you once again leaving nothing but darkness in its stead.
+ENDING 3: <color=yellow>Trapped Forever</color>
 ===
