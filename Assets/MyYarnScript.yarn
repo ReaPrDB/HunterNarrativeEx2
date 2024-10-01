@@ -11,7 +11,7 @@ Narrator: It feels as if you’ve been walking for ages. The path stretches endl
 ===
 
 title: SitDown
-position: -581,-820
+position: -506,-985
 ---
 Narrator: You sit, but the stillness is suffocating. The ground beneath you feels wrong, as though it shifts ever so slightly under your weight. The pulse you heard earlier seems to echo beneath the surface.
 
@@ -23,7 +23,7 @@ Narrator: You sit, but the stillness is suffocating. The ground beneath you feel
 ===
 
 title: ListenClose
-position: -813,-540
+position: -738,-705
 ---
 Narrator: The pulse grows louder, like a heartbeat buried deep below. It's slow, deliberate, and oddly familiar. It creeps up your spine, curling into your mind. Whatever it is, it’s waiting for you. You can’t stay here.
 
@@ -35,14 +35,14 @@ Narrator: The pulse grows louder, like a heartbeat buried deep below. It's slow,
 ===
 
 title: StandUp
-position: -524,-527
+position: -449,-692
 ---
 Narrator: You push yourself to your feet. The ground feels colder than ever before. As you rise, the pulse fades, but something remains-a quiet, lurking presence just beyond your senses. You feel compelled to move forward.
 -> Walk Forward
     <<jump WalkForward>>
 ===
 title: WalkForward
-position: -468,-153
+position: -446,-512
 ---
 Narrator: You take a few steps, and the ground feels firmer now, as if it’s guiding you. Shadows stretch along the ground, growing longer, like fingers reaching out toward you.
 Narrator: In the distance, two figures stand still, barely visible through the gloom.
@@ -58,11 +58,11 @@ Narrator: As the words hang in the air, you feel a shift occur. The second figur
     <<jump standstill>>
 ===
 title: Ignore
-position: -1057,-960
+position: -743,-1108
 ---
 Narrator: You decide to dismiss the pulse, choosing to remain seated. The weight of your exhaustion drapes over you like a cloak, and your eyelids flutter as sleep begins to pull you under, dragging you into a dreamless void.
 Narrator: Moments later, you awake to the sound of something drawing near. But it’s too late-the glint of the creature's claws in the light of the moon becomes the final image seared into your mind before darkness takes you into it's embrace.
-???: <color=orange>You Disappoint me.</color>
+???: <color=orange>You disappoint me.</color>
 GAME OVER: would you like to play again?
     -> yes
         <<jump Start>>
@@ -70,7 +70,7 @@ GAME OVER: would you like to play again?
 END
 ===
 title: standstill
-position: -255,-21
+position: -233,-380
 ---
 Narrator: You freeze in place, paralyzed in fear as the second figure lunges at you.
 Narrator: You feel a cold grip around you, your vision fading to black
@@ -82,7 +82,7 @@ GAME OVER: would you like to play again?
 END
 ===
 title: leftdodge
-position: -624,124
+position: -443,-306
 ---
 Narrator: Managing to overcome the sudden burst of fear within you, you dodge to the left, narrowly avoiding the second figures attack.
 Narrator: However, when you turn back towards the figures, they have vanished with no trace, as if they werent even there in the first place.
@@ -92,7 +92,7 @@ Narrator: However, when you turn back towards the figures, they have vanished wi
     <<jump falseturnback>>
 ===
 title: onward
-position: -585,435
+position: -443,-104
 ---
 Narrator: You decide to continue on forward, you feel as though this will all be over soon.
 Narrator: As you continue onward the tree's seem to clear up as through the thickening mist a small cabin lies ahead.
@@ -105,7 +105,7 @@ Narrator: a chill runs down your spine as you approach. The door creaks slightly
     <<jump enter>>
 ===
 title: falseturnback
-position: -193,236
+position: -12,-194
 ---
 ???:<color=orange>No.</color>
 -> Continue Onward
@@ -114,7 +114,7 @@ position: -193,236
     <<jump falseturnback>>
 ===
 title: inspect
-position: -745,646
+position: -603,107
 ---
 Narrator: The voice of a man spoke out to you, you could tell he wasn't young.
 ???: <color=orange>No.</color>
@@ -126,7 +126,7 @@ Narrator: The voice of a man spoke out to you, you could tell he wasn't young.
     <<jump enter>>
 ===
 title: enter
-position: -498,646
+position: -356,107
 ---
 Narrator: Approaching the door you see the name "Alder" engraved into it.
 Narrator: Pushing the door open you finally step inside, feeling a rush of warmth far greater than the outside world.
@@ -143,7 +143,7 @@ Alder: <color=orange>But not because I controlled you or anything, no.. you were
 
 
 title: silence
-position: -374,791
+position: -98,107
 ---
 Alder: <color=orange>You have no words for me? Perhaps you’ve already realized there’s little left to say.</color>
 Narrator: The weight of Alders presence feels heavier now, though the room remains as it was. Alder stands up, moving closer as if to inspect you, his expression unreadable.
@@ -156,7 +156,7 @@ Alder: <color=orange>You've reached the end, but one question remains.. will you
     <<jump silentrepeat>>
 ===
 title: acceptance
-position: -81,656
+position: 195,-20
 ---
 Narrator: You lower your head, exhaling all the tension that had been building since you first entered the fog. Alder watches, ndding slightly as you embrace the end.
 Alder: <color=orange>So, you understand.. this was inevitable. You are as much a part of my- this world as I am, and here.. we find closure.</color>
@@ -166,7 +166,7 @@ Narrator: The darkness swallows you whole.
 ENDING 1: <color=yellow>Peace At Last.</color>
 ===
 title: refusal
-position: -82,924
+position: 194,240
 ---
 Narrator: You clench your fists, resisting the pull towards finality. Alders face softens, he expected this.
 Alder: <color=orange>Still you struggle. Refusing to let go the illusion of control. But deep down you know that you path would always have led here.</color>
@@ -177,7 +177,7 @@ Narrator: All around you is darkness, no lights. This is it. You're on your own 
 ENDING 2: <color=yellow>Suffering In Silence</color>
 ===
 title: silentrepeat
-position: -81,793
+position: 195,109
 ---
 Alder: <color=orange>No.</color>
 Alder: <color=orange>Silence is not an option here.</color>
@@ -189,7 +189,7 @@ Alder: <color=orange>Silence is not an option here.</color>
     <<jump silentrepeat>>
 ===
 title: turnback
-position: 302,-1000
+position: -66,-1197
 ---
 Narrator: You hesitate, an unseen force gnawing at the back of your mind. Instead of pushing forward, you decide to turn back.
 Narrator: As you retrace your steps, the forest around you seems to shift around. The once familiar trees, now feeling foreign, their branches reaching out like hands to block your way. The fog grows thicker, covering the path behind you.
@@ -199,7 +199,7 @@ Narrator: As you retrace your steps, the forest around you seems to shift around
     <<jump diffroute>>
 ===
 title: pushthrough
-position: 623,-999
+position: 255,-1196
 ---
 Narrator: Determined to leave, you press onward, forcing your way through the tightening maze of branches and fog.  The air growing thicker by the second. The forest seeming alive with unsettling awareness.
 Narrator: Just as you thought you might break free, a voice echoed out from the shadows.
@@ -209,7 +209,7 @@ Narrator: The trees close in, casuing you to stumble, but nothing happens. The p
     <<jump diffroute2>>
 ===
 title: diffroute
-position: 791,-682
+position: 423,-879
 ---
 Narrator: Instead of forcing your way through, you decide to veer off the path ahead, searching for another way out. The fog shifts as you move, but the forest seems to react, guidng your movements as if it was a maze
 Narrator: The air grows colder around you as the ground begins to feel softer, as if it was sinking beneath your feet.
@@ -217,7 +217,7 @@ Narrator: The air grows colder around you as the ground begins to feel softer, a
 <<jump continue>>
 ===
 title: diffroute2
-position: 792,-854
+position: 424,-1051
 ---
 Narrator: Instead of forcing your way through any longer, you decide to veer off the once uncovered the path ahead, searching for another way out. The fog shifts as you move, but the forest seems to react, guidng your movements as if it was a maze
 Narrator: The air grows colder around you as the ground begins to feel softer, as if it was sinking beneath your feet.
@@ -225,7 +225,7 @@ Narrator: The air grows colder around you as the ground begins to feel softer, a
     <<jump continue>>
 ===
 title: continue
-position: 1069,-770
+position: 701,-967
 ---
 Narrator: Suddenly, the fog parts, revealing a clearing up ahead. Relief washes over you, though something about the clearing feels.. wrong.
 Narrator: You step forward, but before you can fully enter, a familiar voice rings out in your ears, sounding quiet but firm.
